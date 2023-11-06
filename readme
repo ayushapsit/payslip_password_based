@@ -1,1 +1,53 @@
+Install Xampp 8.1.17 / PHP 8.1.17 
 
+1. Download this mainproject_otp.zip below.
+2. Then extract the folder in your pc.
+3. Copy the extracted folder and paste it in the /xampp/htdocs.
+4. Open your XAMPP control panel and start Apache and MYSQL.
+5. Open your browser and go to “http://localhost/phpmyadmin/”.
+6. After it loads, click on new
+7. Create a database named slip and click on create.
+8. Go to the import tab at the top and click on it.
+9. Click on browser.
+10. Then look for slip.sql in the database folder we extracted and select it.
+11. Click on Go.
+12. When done importing, open another tab on the browser and go to the path g. “http://localhost/mainproject_otp/”
+13. Then login using the details below.
+
+Steps for login:
+For Super admin:
+ID: 5252
+Password: payslip123
+
+For Accountant
+ID: 3
+Password: harshal
+
+For Employee
+ID: 2
+Password: jayesh
+
+For new added employee:
+Password: id@Apsit
+
+For Linux
+Download Xampp(Linux) version - 8.1.17
+To install xampp
+* Open terminal change directory to Downloads (where xampp file is downloaded)
+* Type sudo chmod 755 (filename).run
+* Type sudo ./(filename).run  (This opens xampp setup install it without unchecking or checking any checkbox)
+* xampp will be installed to /opt/lampp directory
+
+To start server and mysql
+* On xampp gui click on manage server and start 'Apache Web Server' and 'MySql Database'
+* If it doesnt start change the port number by clicking on config
+
+To run project 
+* Install zip file 
+* Open terminal and change directory to cd /opt/lampp/htdocs/
+* Create a folder for our project --- sudo mkdir mainproject
+* Type sudo chmod -R $USER:$USER (folder name) ----- (To give permission for create read and execute folder)
+* Extract the zip file to /opt/lampp/htdocs/mainproject/
+* To Export the sql file open phpmyadmin by typing localhost/phpmyadmin/
+* Create a database named slip and then export the file 
+* Then open new tab and write localhost/(our project directory)/   ---- To start the project
